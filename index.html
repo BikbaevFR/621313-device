@@ -11,7 +11,7 @@
 				<a class="main-header-logo">DEVICE</a>
 				<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
 					<label class="visually-hidden" for="search-site">Поиск по сайту</label>
-					<input id="search-site" name="search" type="search" placeholder="Поиск по сайту">
+					<input id="search-site" type="search" name="search" placeholder="Поиск по сайту">
 					<button class="btn-search" type="submit">Найти</button>
 				</form>
 				<ul class="user-navigation user-navigation-header">
@@ -234,8 +234,22 @@
 </footer>
 <section class="modal modal-write-us">
 	<h2 class="visually-hidden">Напишите нам</h2>
-	<button type="button" class="modal-close">x</button>
-	<!-- Здесь будет форма -->
+	<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+		<p>
+			<label for="name">Ваше имя:</label>
+			<input id="name" type="text" name="name" placeholder="Имя Фамилия">
+		</p>
+		<p>
+			<label for="email">Ваш e-mail:</label>
+			<input id="email" type="email" name="email" placeholder="email@example.com">
+		</p>
+		<p>
+			<label for="text-letter">Текст письма:</label>
+			<textarea id="text-letter" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+		</p>
+		<button class="btn" type="submit">Отправить</button>
+	</form>
+	<button class="modal-close type="button"">Закрыть</button>
 </section>
 <section class="modal modal-map">
 	<h2 class="visually-hidden">Как до нас добраться</h2>

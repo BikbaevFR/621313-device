@@ -8,7 +8,11 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">DEVICE</a>
-        <!-- Форма поиска -->
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search-site">Поиск по сайту</label>
+          <input id="search-site" name="search" type="search" placeholder="Поиск по сайту">
+          <button class="btn-search" type="submit">Найти</button>
+        </form>
         <ul class="user-navigation user-navigation-header">
           <li><a class="username" href="login.html">Валентин Петухов</a></li>
           <li><a class="user-exit" href="login.html">Выйти</a></li>

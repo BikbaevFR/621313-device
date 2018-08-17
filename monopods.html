@@ -49,7 +49,51 @@
     
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Здесь будет форма -->
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <input type="range" name="" min="0" max="5000"> <!-- Нужна помощь!!! -->
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="color-black" type="checkbox" name="black" checked>
+              <label for="color-black">Черный</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="color-white" type="checkbox" name="white">
+              <label for="color-white">Белый</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="color-blue" type="checkbox" name="blue" checked>
+              <label for="color-blue">Синий</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="color-red" type="checkbox" name="red" checked>
+              <label for="color-red">Красный</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="color-pink" type="checkbox" name="pink">
+              <label for="color-pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" id="bluetooth-yes" type="radio" name="availability-bluetooth" value="yes" checked>
+              <label for="bluetooth-yes">Есть</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" id="bluetooth-no" type="radio" name="availability-bluetooth" value="no">
+              <label for="bluetooth-no">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="btn" type="submit">Показать</button>
+      </form>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Список моноподов для селфи</h2>

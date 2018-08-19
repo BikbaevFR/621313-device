@@ -66,3 +66,15 @@ a {
 .main-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
+.main-logo {
+  font-family: "Gilroyextrabold", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.main-header-logo {
+  color: #000000;
+}

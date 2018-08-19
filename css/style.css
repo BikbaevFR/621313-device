@@ -189,12 +189,18 @@ a {
   letter-spacing: 0.2em;
 }
 
-.service-touch-btn h3 {
+.service-touch-btn h3,
+.about-us h2,
+.contacts h2 {
   font-family: "Gilroyextrabold", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
   color: #000000;
 }
+
+/*О нас*/
+
+
 
 
 

@@ -132,11 +132,13 @@ a {
   color: rgba(255, 255, 255, 0.3)
 }
 
-.site-navigation > li > a {
+.site-navigation > li > a,
+.footer-navigation a {
   font-family: "Gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.2em;
+  
   text-transform: uppercase;
 }
 
@@ -209,6 +211,40 @@ a {
   color: #000000;
   letter-spacing: 0;
 }
+
+/* Подвал */
+
+.main-footer {
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer a {
+  color: #ffffff;
+}
+
+.main-footer .main-footer-logo {
+  color: #ffc600;
+}
+
+.user-navigation-footer a,
+.user-block-footer a {
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.7)
+}
+
+.footer-row-middle address,
+ .footer-row-middle .phone {
+  line-height: 30px;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
 
 
 

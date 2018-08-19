@@ -200,7 +200,15 @@ a {
 
 /*О нас*/
 
+.about-us ul {
+  list-style: none;
 
+  font-family: "Gilroyextrabold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+  letter-spacing: 0;
+}
 
 
 

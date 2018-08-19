@@ -78,3 +78,26 @@ a {
 .main-header-logo {
   color: #000000;
 }
+
+.search-form input {
+  font: inherit;
+  
+  background-color: transparent;
+  border: none;
+}
+
+.search-form input::placeholder {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.search-form input:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.search-form input:focus::placeholder {
+  color: rgba(0, 0, 0, 1)
+}
+
+.search-form input:focus {
+  border-bottom: 2px solid #000000;
+}

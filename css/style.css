@@ -27,3 +27,11 @@
   	src:
       url("../fonts/opensanslight.woff2") format("woff2");
 }
+
+body {
+  margin: 0;
+  padding: 0;
+
+
+
+}

@@ -1,37 +1,39 @@
 @font-face {
-    font-family: "Gilroyextrabold";
-    font-style: normal;
+  font-family: "Gilroyextrabold";
+  font-style: normal;
 	font-weight: 400;
-    src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Gilroylight";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/gilroylight.woff2") format("woff2");
+  font-family: "Gilroylight";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/gilroylight.woff2") format("woff2");
 }
 
 @font-face {
-  	font-family: "Opensans";
+  font-family: "Opensans";
  	font-style: normal;
-  	font-weight: 400;
-  	src:
-      url("../fonts/opensans.woff2") format("woff2");
+  font-weight: 400;
+  src: url("../fonts/opensans.woff2") format("woff2");
 }
 
 @font-face {
-  	font-family: "Opensanslight";
+  font-family: "Opensanslight";
  	font-style: normal;
-  	font-weight: 400;
-  	src:
-      url("../fonts/opensanslight.woff2") format("woff2");
+  font-weight: 400;
+  src: url("../fonts/opensanslight.woff2") format("woff2");
 }
 
 body {
   margin: 0;
   padding: 0;
-
-
-
+  
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+  letter-spacing: 0.01em;
 }

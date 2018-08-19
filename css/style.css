@@ -53,16 +53,3 @@ a {
 .main-navigation ul {
   list-style: none;
 }
-
-.main-navigation a {
-  color: #000000;
-}
-
-.main-navigation a:hover,
-.main-navigation a:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.main-navigation a:active {
-  color: rgba(0, 0, 0, 0.3);
-}

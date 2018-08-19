@@ -43,3 +43,13 @@ body {
 a {
   text-decoration: none;
 }
+
+.main-navigation {
+  color: #000000;
+  
+  background-color: #f7e296;
+}
+
+.main-navigation ul {
+  list-style: none;
+}

@@ -243,37 +243,59 @@ a {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   font-weight: 800;
+  color: #000000;
+  letter-spacing: 0.01em;
 }
 
 /*Сервисы*/
 
 .service-toggle {
-  font-family: "Gilroyextrabold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 800;
   color: #000000;
   letter-spacing: 0.2em;
 }
 
-.service-touch-btn h3,
-.about-us h2,
-.contacts h2 {
-  font-family: "Gilroyextrabold", Arial, sans-serif;
+.service-touch-btn h3 {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
+  font-weight: 800;
   color: #000000;
+  letter-spacing: 0.01em;
 }
 
-/*О нас*/
+.service-touch-btn p {
+  letter-spacing: 0.01em;
+}
+
+/*О нас и Контакты*/
+
+.about-us h2,
+.contacts h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
+
+.about-us p,
+.contacts p {
+  letter-spacing: 0.01em;
+}
 
 .about-us ul {
   list-style: none;
 
-  font-family: "Gilroyextrabold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 40px;
+  font-weight: 800;
   color: #000000;
   letter-spacing: 0;
 }
@@ -318,6 +340,7 @@ a {
 .user-block-footer a {
   line-height: 36px;
   color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.01em;
 }
 
 .user-navigation-footer a:hover,

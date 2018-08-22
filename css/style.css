@@ -228,14 +228,40 @@ a {
   color: #ffffff;
 }
 
+.main-footer a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-footer a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .main-footer .main-footer-logo {
   color: #ffc600;
+}
+
+.main-footer .main-footer-logo:hover {
+  color: rgba(255, 198, 0, 0.6);
+}
+
+.main-footer .main-footer-logo:active {
+  color: rgba(255, 198, 0, 0.3);
 }
 
 .user-navigation-footer a,
 .user-block-footer a {
   line-height: 36px;
-  color: rgba(255, 255, 255, 0.7)
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.user-navigation-footer a:hover,
+.user-block-footer a:hover {
+  color: #ffffff;
+}
+
+.user-navigation-footer a:active,
+.user-block-footer a:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-row-middle address,
@@ -244,6 +270,8 @@ a {
   font-style: normal;
   letter-spacing: 0;
 }
+
+/*Форма записи*/
 
 .modal-write-us input,
 .modal-write-us textarea {

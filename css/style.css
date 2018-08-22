@@ -34,6 +34,8 @@
     url("../fonts/opensanslight.woff") format("woff");
 }
 
+/*Общие стили*/
+
 body {
   margin: 0;
   padding: 0;
@@ -116,8 +118,9 @@ a {
 }
 
 .main-logo {
-  font-family: "Gilroyextrabold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -128,22 +131,27 @@ a {
 }
 
 .search-form input {
-  font: inherit;
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+  letter-spacing: 0.01em;
   
   background-color: transparent;
   border: none;
 }
 
 .search-form input::placeholder {
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search-form input:hover::placeholder {
-  color: rgba(0, 0, 0, 0.6)
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search-form input:focus::placeholder {
-  color: rgba(0, 0, 0, 1)
+  color: rgba(0, 0, 0, 1);
 }
 
 .search-form input:focus {
@@ -151,8 +159,12 @@ a {
 }
 
 .btn-search {
-  font: inherit;
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
   color: #000000;
+  letter-spacing: 0.01em;
   
   background-color: transparent;
   border: 2px solid #000000;
@@ -168,14 +180,22 @@ a {
   color: rgba(255, 255, 255, 0.3)
 }
 
-.site-navigation > li > a,
-.footer-navigation a {
-  font-family: "Gilroyextrabold", Arial, sans-serif;
+.site-navigation {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 800;
   letter-spacing: 0.2em;
-  
   text-transform: uppercase;
+}
+
+.submenu {
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  text-transform: none;
 }
 
 /*Слайдер*/

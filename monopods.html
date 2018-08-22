@@ -9,25 +9,24 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html" class="main-logo main-header-logo">Device</a>
+        <a class="main-logo main-header-logo">Device</a>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden" for="search-site">Поиск по сайту</label>
-          <input id="search-site" name="search" type="search" placeholder="Поиск по сайту">
+          <input id="search-site" type="search" name="search" placeholder="Поиск по сайту">
           <button class="btn-search" type="submit">Найти</button>
         </form>
         <ul class="user-navigation user-navigation-header">
-          <li><a class="username" href="login.html">Валентин Петухов</a></li>
-          <li><a class="user-exit" href="login.html">Выйти</a></li>
+          <li><a class="login-link" href="login.html">Войти</a></li>
         </ul>
         <ul class="user-block user-block-header">
           <li><a class="compare" href="compare.html">Сравнить</a></li>
           <li><a class="basket" href="basket.html">Корзина</a></li>
         </ul>
-        <ul class="site-navigation">
+        <ul class="site-navigation header-navigation">
           <li><a href="catalog.html">Каталог товаров</a>
-          <ul>
+          <ul class="submenu">
             <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="monopods.html">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
             <li><a href="#">Фитнес-браслеты</a></li>
             <li><a href="#">Умные часы</a></li>
@@ -187,7 +186,7 @@
     
     <div class="footer-row-middle">
     <address>г. Москва, ул. Строителей, 15</address>
-    <ul class="footer-navigation">
+    <ul class="site-navigation footer-navigation">
       <li><a href="delivery.html">Доставка</a></li>
       <li><a href="guarantee.html">Гарантия</a></li>
       <li><a href="contacts.html">Контакты</a></li>

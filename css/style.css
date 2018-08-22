@@ -245,6 +245,26 @@ a {
   letter-spacing: 0;
 }
 
+.modal-write-us input,
+.modal-write-us textarea {
+  background-color: #f2f2f2;
+  
+  border: none;
+}
+
+.modal-write-us label {
+  font-family: "Gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.modal-write-us .btn {
+  border: none;
+  background-color: #ffffff;
+}
+
 
 
 

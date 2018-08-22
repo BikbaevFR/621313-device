@@ -280,6 +280,27 @@ a {
   border: none;
 }
 
+.modal-write-us input:hover,
+.modal-write-us textarea:hover {
+  background-color: #eaeaea;
+  background-image: url("../img/bg-form-hover.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal-write-us input:focus,
+.modal-write-us textarea:focus {
+  background-color: #ffffff;
+  
+  border: 3px solid #f7e296;
+}
+
+.modal-write-us input:invalid {
+  background-color: #f6dada;
+  
+  border: none;
+}
+
 .modal-write-us label {
   font-family: "Gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
@@ -288,10 +309,21 @@ a {
   letter-spacing: 0;
 }
 
+.modal-write-us input:placeholder,
+.modal-write-us textarea:placeholder {
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: red;
+  letter-spacing: 0;
+}
+
 .modal-write-us .btn {
   border: none;
   background-color: #ffffff;
 }
+
+
 
 
 

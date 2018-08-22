@@ -323,6 +323,33 @@ a {
   background-color: #ffffff;
 }
 
+.page-title {
+  font-family: "Gilroyextrabold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
 
 
 

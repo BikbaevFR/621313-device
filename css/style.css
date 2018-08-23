@@ -364,6 +364,10 @@ a {
 
 .modal-write-us input,
 .modal-write-us textarea {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  
   background-color: #f2f2f2;
   
   border: none;
@@ -391,20 +395,11 @@ a {
 }
 
 .modal-write-us label {
-  font-family: "Gilroyextrabold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 800;
   color: #000000;
-  letter-spacing: 0;
-}
-
-.modal-write-us input:placeholder,
-.modal-write-us textarea:placeholder {
-  font-family: "Opensans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: red;
-  letter-spacing: 0;
 }
 
 .modal-write-us .btn {
@@ -412,12 +407,18 @@ a {
   background-color: #ffffff;
 }
 
+/*ВТОРАЯ СТРАНИЦА*/
+
 .page-title {
-  font-family: "Gilroyextrabold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
+  font-weight: 800;
   color: #000000;
+  letter-spacing: 0.01em;
 }
+
+/*Хлебные крошки*/
 
 .breadcrumbs {
   list-style: none;
@@ -427,6 +428,7 @@ a {
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
 }
 
 .breadcrumbs a:hover,
@@ -438,6 +440,8 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/*Фильтры*/
+
 .filters {
   color: #000000;
 
@@ -447,48 +451,53 @@ a {
   background-repeat: repeat;
 }
 
-.filters h2,
-.sorting h2 {
-  font-family: "Gilroyextrabold", Arial, sans-serif;
+.filters h2 {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #000000;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-}
-
-.filters h2 {
+  
   background-color: #dcdcdc;
   background-image: url("../img/bg-title-filters.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
 
-
 .filter fieldset {
   border: none;
 }
 
 .filter legend {
-  font-family: "Gilroyextrabold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
+  font-weight: 800;
+  letter-spacing: 0.01em;
 }
 
 .filter ul {
   list-style: none;
   
-  font-family: "Opensanslight", Arial, sans-serif;
   font-size: 14px;
   line-height: 40px;
+  letter-spacing: 0.01em;
 }
+
+.filter .btn {
+  border: none;
+  background-color: transparent;
+}
+
+/*Сортировка*/
 
 .sorting {
   font-family: "Opensans", Arial, sans-serif;
   font-size: 14px;
-  color: #000000;
   line-height: 18px;
+  font-weight: 400;
+  color: #000000;
   letter-spacing: 0;
   
   background-color: #ebebeb;
@@ -496,6 +505,15 @@ a {
 
 .sorting ul {
   list-style: none;
+}
+
+.sorting h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .sorting a:not(.current) {
@@ -511,6 +529,8 @@ a {
   color: rgba(0, 0, 0, 1);
 }
 
+/*Каталог товаров*/
+
 .catalog-list {
   list-style: none;
 }
@@ -520,15 +540,19 @@ a {
 }
 
 .catalog-item h3 {
-  font-family: "Gilroyextrabold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
 }
 
 .catalog-item b {
-  font-family: "Gilroylight", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
 }
 
 .catalog-item img {
@@ -541,6 +565,7 @@ a {
 .catalog-item .button-compare {
   font-size: 13px;
   line-height: 36px;
+  letter-spacing: 0.01em;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -553,6 +578,8 @@ a {
   color: rgba(0, 0, 0, 0.2);
 }
 
+/*Пагинация*/
+
 .pagination-list {
   list-style: none;
   
@@ -560,9 +587,10 @@ a {
 }
 
 .pagination-item a {
-  font-family: "Gilroyextrabold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 800;
   color: #000000;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -606,6 +634,16 @@ a {
   background-color: #ebebeb;;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 
 

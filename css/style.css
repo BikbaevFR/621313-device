@@ -695,16 +695,29 @@ input[type="radio"].visually-hidden {
   margin-bottom: 45px;
 }
 
-.user-navigation-header {
-  margin-left: auto;
-  margin-right: 220px;
+.user-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-.user-block-header {
+.user-navigation li {
+  margin-right: 20px;
+}
+
+.user-navigation li:last-child {
+  margin-right: 0;
+}
+
+.user-navigation-header {
+  margin-left: 100px;
+}
+
+.user-block {
   display: flex;
 }
 
-.user-block-header li:first-child {
+.user-block li:first-child {
   margin-right: 60px;
 }
 
@@ -722,9 +735,23 @@ input[type="radio"].visually-hidden {
   margin-right: 100px;
 }
 
-/*НУЖНА ПОДСКАЗКА!!! */
 .popular {
   margin-bottom: 105px;
+}
+
+.popular-item:not(.slider-first) {
+  display: none;
+}
+
+.popular-item {
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+
+.main-description {
+  width: 500px;
+  margin-right: 60px;
 }
 
 .categories {
@@ -761,6 +788,10 @@ input[type="radio"].visually-hidden {
 .service-block {
   width: 260px;
   margin-right: 140px;
+}
+
+.service-touch-btn:not(.delivery) {
+  display: none;
 }
 
 .service-block-description {
@@ -810,10 +841,8 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation-footer {
-  margin: 0;
-  padding: 0;
   margin-left: auto;
-  margin-right: 40px;
+  margin-right: 65px;
 }
 
 .user-block-footer {
@@ -824,8 +853,11 @@ input[type="radio"].visually-hidden {
 .footer-navigation {
   margin: 0;
   padding: 0;
-  
+  width: 440px;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .footer-navigation li {
@@ -834,14 +866,8 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.footer-navigation li:nth-child(2) {
+.footer-navigation li:nth-child(3n-1) {
   margin: 0 10px;
-}
-
-.footer-social {
-  margin: 0;
-  padding: 0;
-  margin: 0 auto;
 }
 
 .footer-row {
@@ -857,7 +883,24 @@ input[type="radio"].visually-hidden {
   margin-bottom: 65px;
 }
 
-/*ВТОРАЯ СТР.*/
+.footer-row-bottom {
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.footer-social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.footer-social li {
+  margin-right: 20px;
+}
+
+/*ВТОРАЯ СТРАНИЦА*/
 
 .page-title {
   margin: 0;
@@ -867,10 +910,15 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
+  display: flex;
   padding: 0;
   padding: 0 60px;
   margin: 0;
   margin-bottom: 50px;
+}
+
+.breadcrumbs li {
+  margin-right: 40px;
 }
 
 .catalog-page {
@@ -899,7 +947,6 @@ input[type="radio"].visually-hidden {
 
 .filter {
   width: 330px;
-  padding-top: 25px;
   padding-left: 60px;
 }
 
@@ -921,6 +968,10 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: center;
+          align-items: center;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   width: 832px;
@@ -928,16 +979,33 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting h2 {
-  padding: 25px 0;
+  margin-right: 55px;
 }
 
 .sorting-type-list {
   display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+}
+
+.sorting-type-item {
+  margin-right: 30px;
+}
+
+.sorting-direction-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.sorting-direction-item.current {
+  margin-left: 20px;
 }
 
 .catalog {
   width: 832px;
-  padding: 0 0 0 75px;
+  padding: 0 0 0 70px;
   padding-top: 70px;
 }
 
@@ -960,12 +1028,33 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
+.catalog-item-hover {
+  display: none;
+}
+
 .pagination-list {
+  min-height: 70px;
   margin: 0 auto;
   padding: 0;
   display: flex;
-  -webkit-justify-content: space-around;
-          justify-content: space-around;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
   margin-bottom: 75px;
+}
+
+.pagination-item-number {
+  margin-right: 32px;
+}
+
+.pagination-item-back {
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+.pagination-item-next {
+  margin-left: auto;
+  margin-right: 30px;
 }
 

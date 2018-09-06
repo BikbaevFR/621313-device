@@ -16,13 +16,15 @@
 						<input id="search-site" type="search" name="search" placeholder="Поиск по сайту">
 						<button class="btn-search" type="submit">Найти</button>
 					</form>
-					<ul class="user-navigation user-navigation-header">
-						<li><a class="login-link" href="login.html">Войти</a></li>
-					</ul>
-					<ul class="user-block user-block-header">
-						<li><a class="compare" href="compare.html">Сравнить</a></li>
-						<li><a class="basket" href="basket.html">Корзина</a></li>
-					</ul>
+					<div class="user-box">
+						<ul class="user-navigation user-navigation-header">
+							<li><a class="login-link" href="login.html">Войти</a></li>
+						</ul>
+						<ul class="user-block user-block-header">
+							<li><a class="compare" href="compare.html">Сравнить</a></li>
+							<li><a class="basket" href="basket.html">Корзина</a></li>
+						</ul>
+					</div>
 				</div>
 				<ul class="site-navigation header-navigation">
 					<li><a href="catalog.html">Каталог товаров</a>
@@ -47,9 +49,9 @@
 		
 		<section class="popular container">
 			<h2 class="visually-hidden">Популярные гаджеты</h2>
-			<input type="radio" id="popular-btn-1" name="popular-toggle" checked>
-			<input type="radio" id="popular-btn-2" name="popular-toggle">
-			<input type="radio" id="popular-btn-3" name="popular-toggle">
+			<input class="popular-btn-1 visually-hidden" type="radio" id="popular-btn-1" name="popular-toggle" checked>
+			<input class="popular-btn-2 visually-hidden" type="radio" id="popular-btn-2" name="popular-toggle">
+			<input class="popular-btn-3 visually-hidden" type="radio" id="popular-btn-3" name="popular-toggle">
 			<div class="popular-toggle">
 				<label for="popular-btn-1"></label>
 				<label for="popular-btn-2"></label>
@@ -65,14 +67,14 @@
 						<a class="btn" href="main-selfie-stick.html">Подробнее</a>
 						<table class="characteristics">
 							<tr>
-								<th>Длина палки</th>
-								<th>Вес палки</th>
-								<th>Материал</th>
-							</tr>
-							<tr>
 								<td>8,5 м</td>
 								<td>5 кг</td>
 								<td>Карбон</td>
+							</tr>
+							<tr>
+								<th>Длина палки</th>
+								<th>Вес палки</th>
+								<th>Материал</th>
 							</tr>
 						</table>
 					</div>
@@ -86,10 +88,10 @@
 						<a class="btn" href="main-bracelets.html">Подробнее</a>
 						<table class="characteristics">
 							<tr>
-								<th>Без подзарядки</th>
+								<td>48 часов</td>
 							</tr>
 							<tr>
-								<td>48 часов</td>
+								<th>Без подзарядки</th>
 							</tr>
 						</table>
 					</div>
@@ -103,12 +105,12 @@
 						<a class="btn" href="main-quadrocopter.html">Подробнее</a>
 						<table class="characteristics">
 							<tr>
-								<th>Дальность полета</th>
-								<th>Радиус поражения</th>
-							</tr>
-							<tr>
 								<td>800 м</td>
 								<td>50 м</td>
+							</tr>
+							<tr>
+								<th>Дальность полета</th>
+								<th>Радиус поражения</th>
 							</tr>
 						</table>
 					</div>
@@ -119,32 +121,32 @@
 			<h2 class="visually-hidden">Каталог товаров</h2>
 			<ul class="categories-list">
 				<li class="categories-item">
-					<a href="virtual-reality.html">
+					<a class="categories-link virtual-reality" href="virtual-reality.html">
 						<h3>Виртуальная реальность</h3>
 					</a>
 				</li>
 				<li class="categories-item">
-					<a href="monopods.html">
-						<h3>Моноподы для селфи</h3>
+					<a class="categories-link monopods" href="monopods.html">
+						<h3>Моноподы <br> для селфи</h3>
 					</a>
 				</li>
 				<li class="categories-item">
-					<a href="action-cameras.html">
+					<a class="categories-link action-cameras" href="action-cameras.html">
 						<h3>Экшн-камеры</h3>
 					</a>
 				</li>
 				<li class="categories-item">
-					<a href="fitness-trackers.html">
+					<a class="categories-link fitness-trackers" href="fitness-trackers.html">
 						<h3>Фитнес-браслеты</h3>
 					</a>
 				</li>
 				<li class="categories-item">
-					<a href="smart-watch.html">
+					<a class="categories-link smart-watch" href="smart-watch.html">
 						<h3>Умные часы</h3>
 					</a>
 				</li>
 				<li class="categories-item">
-					<a href="quadcopters.html">
+					<a class="categories-link quadcopters" href="quadcopters.html">
 						<h3>Квадрокоптеры</h3>
 					</a>
 				</li>
@@ -152,47 +154,70 @@
 		</section>
 		<section class="services">
 			<h2 class="visually-hidden">Сервисы</h2>
-			<div class="services-wrapper">
-				<div class="container">
-					<div class="service-block">
-						<div class="cl">
-							<input type="radio" id="service-btn-1" name="service-toggle" checked>
-							<input type="radio" id="service-btn-2" name="service-toggle">
-							<input type="radio" id="service-btn-3" name="service-toggle">
-						</div>
-						<div class="service-toggle">
-							<label for="service-btn-1">Доставка</label>
-							<label for="service-btn-2">Гарантия</label>
-							<label for="service-btn-3">Кредит</label>
-						</div>
-					</div>
-					<div class="service-block-description">
-						<section class="service-touch-btn delivery">
-							<h3>Доставка</h3>
-							<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-							</p>
-						</section>
-						<section class="service-touch-btn warranty">
-							<h3>Гарантия</h3>
-							<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-							</p>
-						</section>
-						<section class="service-touch-btn credit">
-							<h3>Кредит</h3>
-							<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
-							</p>
-						</section>
-					</div>
+			<div class="services-container">
+				<input class="services-btn-1 visually-hidden" type="radio" id="service-1" name="service-toggle" checked>
+				<input class="services-btn-2 visually-hidden" type="radio" id="service-2" name="service-toggle">
+				<input class="services-btn-3 visually-hidden" type="radio" id="service-3" name="service-toggle">
+				<div class="service-toggle">
+					<label for="service-1">Доставка</label>
+					<label for="service-2">Гарантия</label>
+					<label for="service-3">Кредит</label>
+				</div>
+				<div class="service-block-description">
+					<section class="service-touch-btn delivery">
+						<h3>Доставка</h3>
+						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+						</p>
+					</section>
+					<section class="service-touch-btn warranty">
+						<h3>Гарантия</h3>
+						<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+						</p>
+					</section>
+					<section class="service-touch-btn credit">
+						<h3>Кредит</h3>
+						<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+						</p>
+					</section>
 				</div>
 			</div>
 		</section>
 		<section class="partners container">
 			<h2 class="visually-hidden">Партнеры</h2>
 			<ul class="partners-list">
-				<li class="partners-item"><a href="https://www.dji.com/ru"><img src="img/dji-color.png" width="260" height="100" alt="DJI">DJI</a></li>
-				<li class="partners-item"><a href="http://www.sp-gadgets.com/"><img src="img/spgadgets-color.png" width="260" height="100" alt="SP Gadgets">SP Gadgets</a></li>
-				<li class="partners-item"><a href="https://ru.shop.gopro.com"><img src="img/gopro-color.png" width="260" height="100" alt="GoPro">GoPro</a></li>
-				<li class="partners-item"><a href="https://www.vive.com/ru/"><img src="img/vive-color.png" width="260" height="100" alt="VIVE">VIVE</a></li>
+				<li class="partners-item">
+					<a href="https://www.dji.com/ru">
+						<span class="visually-hidden">DJI</span>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
+							<image filter="url(#filtersPicture)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/dji-color.png"/>
+						</svg>
+					</a>
+					
+				</li>
+				<li class="partners-item">
+					<a href="http://www.sp-gadgets.com/">
+						<span class="visually-hidden">SP Gadgets</span>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
+							<image filter="url(#filtersPicture)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/spgadgets-color.png"/>
+						</svg>
+					</a>
+				</li>
+				<li class="partners-item">
+					<a href="https://ru.shop.gopro.com">
+						<span class="visually-hidden">GoPro</span>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
+							<image filter="url(#filtersPicture)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/gopro-color.png"/>
+						</svg>
+					</a>
+				</li>
+				<li class="partners-item">
+					<a href="https://www.vive.com/ru/">
+						<span class="visually-hidden">VIVE</span>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
+							<image filter="url(#filtersPicture)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/vive-color.png"/>
+						</svg>
+					</a>
+				</li>
 			</ul>
 		</section>
 		<div class="index-columns container">
@@ -215,7 +240,6 @@
 			</section>
 		</div>
 	</main>
-	
 	<footer class="main-footer">
 		<div class="container">
 			<div class="footer-row footer-row-top">
@@ -241,12 +265,12 @@
 		
 		<div class="footer-row footer-row-bottom">
 			<ul class="footer-social">
-				<li><a class="btn-social btn-social-fb" href="https://facebook.com/htmlacademy">Facebook</a></li>
-				<li><a class="btn-social btn-social-in" href="https://instagram.com/htmlacademy">Instagram</a></li>
-				<li><a class="btn-social btn-social-tw" href="https://twitter.com/htmlacademy_ru?lang=ru">Twitter</a></li>
+				<li><a class="btn-social btn-social-fb" href="https://facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a></li>
+				<li><a class="btn-social btn-social-in" href="https://instagram.com/htmlacademy"><span class="visually-hidden">Instagram</span></a></li>
+				<li><a class="btn-social btn-social-tw" href="https://twitter.com/htmlacademy_ru?lang=ru"><span class="visually-hidden">Twitter</span></a></li>
 			</ul>
 			<div class="footer-copyright">
-				<a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+				<a href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
 			</div>
 		</div>
 	</div>
@@ -275,5 +299,13 @@
 	<img src="img/map-big.jpg" width="994" height="593" alt="Офис компании по адресу ул. Строителей 15, Москва">
 	<button class="modal-close" type="button">Закрыть</button>
 </section>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
+	<defs>
+	<filter id="filtersPicture">
+	<feComposite result="inputTo_38" in="SourceGraphic" in2="SourceGraphic" operator="arithmetic" k1="0.3" k2="0.3" k3="0.3" k4="0.5" />
+	<feColorMatrix id="filter_38" type="saturate" values="0" data-filterid="38" />
+	</filter>
+	</defs>
+</svg>
 </body>
 </html>

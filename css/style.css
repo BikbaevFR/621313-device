@@ -163,12 +163,12 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.main-navigation a:hover,
-.main-navigation a:focus {
+.main-navigation a[href]:hover,
+.main-navigation a[href]:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.main-navigation a:active {
+.main-navigation a[href]:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1167,11 +1167,12 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.main-footer a:hover {
+.main-footer a[href]:hover,
+.main-footer a[href]:focus {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.main-footer a:active {
+.main-footer a[href]:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1184,11 +1185,12 @@ input[type="radio"].visually-hidden {
   color: #ffc600;
 }
 
-.main-footer .main-footer-logo:hover {
+.main-footer .main-footer-logo[href]:hover,
+.main-footer .main-footer-logo[href]:focus {
   color: rgba(255, 198, 0, 0.6);
 }
 
-.main-footer .main-footer-logo:active {
+.main-footer .main-footer-logo[href]:active {
   color: rgba(255, 198, 0, 0.3);
 }
 

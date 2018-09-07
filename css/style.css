@@ -1027,7 +1027,9 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.01em;
 }
 
-.about-us ul {
+.transport-companies {
+  position: relative;
+
   margin: 0;
   margin-top: 65px;
   padding: 0;
@@ -1041,6 +1043,31 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0;
   
   list-style: none;
+}
+
+.transport-companies li:before {
+  content: "";
+  
+  position: absolute;
+  left: 6px;
+
+  width: 8px;
+  height: 8px;
+  
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 2px #e5e5e5;
+}
+
+.transport-companies li:first-child:before {  
+  top: 16px;
+}
+
+.transport-companies li:nth-child(2):before {  
+  top: 55px;
+}
+
+.transport-companies li:last-child:before {  
+  top: 96px;
 }
 
 .about-us {

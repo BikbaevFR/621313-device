@@ -278,18 +278,20 @@
 <section class="modal modal-write-us">
 	<h2 class="visually-hidden">Напишите нам</h2>
 	<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-		<p>
-			<label for="name">Ваше имя:</label>
-			<input id="name" type="text" name="name" placeholder="Имя Фамилия">
-		</p>
-		<p>
-			<label for="email">Ваш e-mail:</label>
-			<input id="email" type="email" name="email" placeholder="email@example.com">
-		</p>
-		<p>
-			<label for="text-letter">Текст письма:</label>
-			<textarea id="text-letter" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-		</p>
+		<div class="write-us-form-wrapper">
+			<p>
+				<label for="name">Ваше имя:</label>
+				<input id="name" type="text" name="name" placeholder="Имя Фамилия">
+			</p>
+			<p>
+				<label for="email">Ваш e-mail:</label>
+				<input id="email" type="email" name="email" placeholder="email@example.com">
+			</p>
+			<p>
+				<label for="text-letter">Текст письма:</label>
+				<textarea id="text-letter" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+			</p>
+		</div>
 		<button class="btn" type="submit">Отправить</button>
 	</form>
 	<button class="modal-close" type="button">Закрыть</button>
@@ -299,7 +301,7 @@
 	<img src="img/map-big.jpg" width="994" height="593" alt="Офис компании по адресу ул. Строителей 15, Москва">
 	<button class="modal-close" type="button">Закрыть</button>
 </section>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
+<svg class="filters-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
 	<defs>
 	<filter id="filtersPicture">
 	<feComposite result="inputTo_38" in="SourceGraphic" in2="SourceGraphic" operator="arithmetic" k1="0.3" k2="0.3" k3="0.3" k4="0.5" />

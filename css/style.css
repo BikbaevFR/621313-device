@@ -1517,6 +1517,11 @@ input[type="radio"].visually-hidden {
 /*______________________________________________*/
 
 .page-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  padding: 0 60px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -1528,14 +1533,57 @@ input[type="radio"].visually-hidden {
 /*Хлебные крошки*/
 
 .breadcrumbs {
+  display: flex;
+  padding: 0;
+  padding: 0 60px;
+  margin: 0;
+  margin-bottom: 50px;
+
   list-style: none;
 }
 
+.breadcrumbs li {
+  margin-right: 40px;
+}
+
 .breadcrumbs a {
+  position: relative;
+
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 0.01em;
+}
+
+.breadcrumbs a:before, 
+.breadcrumbs a:after {
+  content:'';
+  
+  position: absolute;
+  right: -21px;
+  
+  display: block;
+  width: 4px;
+  height: 1px;
+  
+  background-color: #000000; 
+}
+
+.breadcrumbs a:before {
+  top: 9px;
+  
+  transform: rotate(225deg);
+}
+
+.breadcrumbs a:after {
+  top: 11px;
+  
+  transform: rotate(-45deg); 
+}
+
+.breadcrumbs li:last-child a:before, 
+.breadcrumbs li:last-child a:after {
+  display: none;
 }
 
 .breadcrumbs a:hover,
@@ -1544,7 +1592,7 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs a:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.1);
 }
 
 /*Фильтры*/
@@ -1748,24 +1796,17 @@ input[type="radio"].visually-hidden {
 
 /*ВТОРАЯ СТРАНИЦА*/
 
-.page-title {
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
-  padding: 0 60px;
-}
 
-.breadcrumbs {
-  display: flex;
-  padding: 0;
-  padding: 0 60px;
-  margin: 0;
-  margin-bottom: 50px;
-}
 
-.breadcrumbs li {
-  margin-right: 40px;
-}
+
+
+
+
+
+
+
+
+
 
 .catalog-page {
   width: 100%;

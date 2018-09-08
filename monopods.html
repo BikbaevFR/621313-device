@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="main-header container">
+    <header class="main-header container inner-page">
       <nav class="main-navigation">
         <a class="main-logo main-header-logo" href="index.html">Device</a>
         <div class="header-row-top">
@@ -18,7 +18,8 @@
           </form>
           <div class="user-box">
             <ul class="user-navigation user-navigation-header">
-              <li><a class="username login-link" href="login.html">Валентин Петухов</a></li>
+              <li><a class="username login-link
+                " href="login.html">Валентин Петухов</a></li>
               <li><a class="user-exit" href="login.html">Выйти</a></li>
             </ul>
             <ul class="user-block user-block-header">
@@ -67,8 +68,8 @@
             <li><a class="sorting-type-item" href="#">По популярности</a></li>
           </ul>
           <ul class="sorting-direction-list">
-            <li><a class="sorting-direction-item" href="#">Up</a></li>
-            <li><a class="sorting-direction-item current">Down</a></li>
+            <li><a class="sorting-direction-item sorting-btn-up" href="#"><span class="visually-hidden">Up</span></a></li>
+            <li><a class="sorting-direction-item sorting-btn-down current"><span class="visually-hidden">Down</span></a></li>
           </ul>
         </section>
       </header>
@@ -82,12 +83,12 @@
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale"><div class="bar"></div></div>
-                    <div class="toggle min-toggle"></div>
-                    <div class="toggle max-toggle"></div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
                   </div>
                   <div class="price-controls">
-                    от <input class="min-price" type="text" value="0">
-                    до <input class="max-price" type="text" value="5000">
+                    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                    <label class="max-price">до <input type="text" name="max-price" value="5000"></label>
                   </div>
                 </div>
               </fieldset>
@@ -149,7 +150,7 @@
               <li class="catalog-item">
                 <figure>
                   <img src="img/professional-self-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                  <figcaption><h3><a href="catalog-item.html">Профессиональная селфи-палка</a></h3><b>1 500 руб.</b></figcaption>
+                  <figcaption><h3><a href="catalog-item.html">Профессиональная <br> селфи-палка</a></h3><b>1 500 руб.</b></figcaption>
                 </figure>
                 <p class="catalog-item-hover">
                   <a class="btn button-basket" href="#">В корзину</a>
@@ -194,7 +195,7 @@
       <div class="footer-row footer-row-top">
         <a href="index.html" class="main-logo main-footer-logo">DEVICE</a>
         <ul class="user-navigation user-navigation-footer">
-          <li><a class="username" href="login.html">Валентин Петухов</a></li>
+          <li><a class="username login-link" href="login.html">Валентин Петухов</a></li>
           <li><a class="user-exit" href="login.html">Выйти</a></li>
         </ul>
         <ul class="user-block user-block-footer">
@@ -214,12 +215,12 @@
     </div>
     <div class="footer-row footer-row-bottom">
       <ul class="footer-social">
-        <li><a class="btn-social btn-social-fb" href="https://facebook.com/htmlacademy">Facebook</a></li>
-        <li><a class="btn-social btn-social-in" href="https://instagram.com/htmlacademy">Instagram</a></li>
-        <li><a class="btn-social btn-social-tw" href="https://twitter.com/htmlacademy_ru?lang=ru">Twitter</a></li>
+        <li><a class="btn-social btn-social-fb" href="https://facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="btn-social btn-social-in" href="https://instagram.com/htmlacademy"><span class="visually-hidden">Instagram</span></a></li>
+        <li><a class="btn-social btn-social-tw" href="https://twitter.com/htmlacademy_ru?lang=ru"><span class="visually-hidden">Twitter</span></a></li>
       </ul>
       <div class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </div>
   </div>

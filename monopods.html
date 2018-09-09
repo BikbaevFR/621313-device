@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Моноподы для селфи</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
-    <header class="main-header container inner-page">
-      <nav class="main-navigation">
-        <a class="main-logo main-header-logo" href="index.html">Device</a>
-        <div class="header-row-top">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <label class="visually-hidden" for="search-site">Поиск по сайту</label>
-            <input id="search-site" type="search" name="search" placeholder="Поиск по сайту">
-            <button class="btn-search" type="submit">Найти</button>
-          </form>
-          <div class="user-box">
-            <ul class="user-navigation user-navigation-header">
-              <li><a class="username login-link
+
+<head>
+  <meta charset="UTF-8">
+  <title>Моноподы для селфи</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header class="main-header container inner-page">
+    <nav class="main-navigation">
+      <a class="main-logo main-header-logo" href="index.html">Device</a>
+      <div class="header-row-top">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search-site">Поиск по сайту</label>
+          <input id="search-site" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="btn-search" type="submit">Найти</button>
+        </form>
+        <div class="user-box">
+          <ul class="user-navigation user-navigation-header">
+            <li><a class="username login-link
                 " href="login.html">Валентин Петухов</a></li>
-              <li><a class="user-exit" href="login.html">Выйти</a></li>
-            </ul>
-            <ul class="user-block user-block-header">
-              <li><a class="compare" href="compare.html">Сравнить</a></li>
-              <li><a class="basket" href="basket.html">Корзина</a></li>
-            </ul>
-          </div>
+            <li><a class="user-exit" href="login.html">Выйти</a></li>
+          </ul>
+          <ul class="user-block user-block-header">
+            <li><a class="compare" href="compare.html">Сравнить</a></li>
+            <li><a class="basket" href="basket.html">Корзина</a></li>
+          </ul>
         </div>
-        <ul class="site-navigation header-navigation">
-          <li><a href="catalog.html">Каталог товаров</a>
+      </div>
+      <ul class="site-navigation header-navigation">
+        <li><a href="catalog.html">Каталог товаров</a>
           <ul class="submenu">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="monopods.html">Моноподы для селфи</a></li>
@@ -45,7 +47,6 @@
       </ul>
     </nav>
   </header>
-  
   <main>
     <div class="container">
       <h1 class="page-title">Моноподы для селфи</h1>
@@ -73,22 +74,28 @@
           </ul>
         </section>
       </header>
-      
       <div class="catalog-body">
         <div class="catalog-page-wrapper container">
           <section class="catalog-body-filter">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
               <fieldset>
                 <legend>Стоимость</legend>
                 <div class="range-filter">
                   <div class="range-controls">
-                    <div class="scale"><div class="bar"></div></div>
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
                     <div class="range-toggle range-toggle-min"></div>
                     <div class="range-toggle range-toggle-max"></div>
                   </div>
                   <div class="price-controls">
-                    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                    <label class="max-price">до <input type="text" name="max-price" value="5000"></label>
+                    <label class="min-price">от
+                      <input type="text" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">до
+                      <input type="text" name="max-price" value="5000">
+                    </label>
                   </div>
                 </div>
               </fieldset>
@@ -133,14 +140,14 @@
               <button class="btn" type="submit">Показать</button>
             </form>
           </section>
-          
           <section class="catalog">
             <h2 class="visually-hidden">Список моноподов для селфи</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
                 <figure>
                   <img src="img/amateur-self-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                  <figcaption><h3><a href="catalog-item.html">Любительская селфи-палка</a></h3><b>500 руб.</b></figcaption>
+                  <figcaption>
+                    <h3><a href="catalog-item.html">Любительская селфи-палка</a></h3><b>500 руб.</b></figcaption>
                 </figure>
                 <p class="catalog-item-hover">
                   <a class="btn button-basket" href="#">В корзину</a>
@@ -150,7 +157,8 @@
               <li class="catalog-item">
                 <figure>
                   <img src="img/professional-self-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                  <figcaption><h3><a href="catalog-item.html">Профессиональная <br> селфи-палка</a></h3><b>1 500 руб.</b></figcaption>
+                  <figcaption>
+                    <h3><a href="catalog-item.html">Профессиональная <br> селфи-палка</a></h3><b>1 500 руб.</b></figcaption>
                 </figure>
                 <p class="catalog-item-hover">
                   <a class="btn button-basket" href="#">В корзину</a>
@@ -160,7 +168,8 @@
               <li class="catalog-item">
                 <figure>
                   <img src="img/unsinkable-self-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                  <figcaption><h3><a href="catalog-item.html">Непотопляемая селфи-палка</a></h3><b>2 500 руб.</b></figcaption>
+                  <figcaption>
+                    <h3><a href="catalog-item.html">Непотопляемая селфи-палка</a></h3><b>2 500 руб.</b></figcaption>
                 </figure>
                 <p class="catalog-item-hover">
                   <a class="btn button-basket" href="#">В корзину</a>
@@ -170,7 +179,8 @@
               <li class="catalog-item">
                 <figure>
                   <img src="img/self-stick-follow-me.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                  <figcaption><h3><a href="catalog-item.html">Селфи-палка «Следуй за мной»</a></h3><b>4 900 руб.</b></figcaption>
+                  <figcaption>
+                    <h3><a href="catalog-item.html">Селфи-палка «Следуй за мной»</a></h3><b>4 900 руб.</b></figcaption>
                 </figure>
                 <p class="catalog-item-hover">
                   <a class="btn button-basket" href="#">В корзину</a>
@@ -203,27 +213,27 @@
           <li><a class="basket" href="basket.html">Корзина</a></li>
         </ul>
       </div>
-      
       <div class="footer-row footer-row-middle">
-      <address>г. Москва, ул. Строителей, 15</address>
-      <ul class="site-navigation footer-navigation">
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="guarantee.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-    </div>
-    <div class="footer-row footer-row-bottom">
-      <ul class="footer-social">
-        <li><a class="btn-social btn-social-fb" href="https://facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a></li>
-        <li><a class="btn-social btn-social-in" href="https://instagram.com/htmlacademy"><span class="visually-hidden">Instagram</span></a></li>
-        <li><a class="btn-social btn-social-tw" href="https://twitter.com/htmlacademy_ru?lang=ru"><span class="visually-hidden">Twitter</span></a></li>
-      </ul>
-      <div class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
+        <address>г. Москва, ул. Строителей, 15</address>
+        <ul class="site-navigation footer-navigation">
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="guarantee.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+      </div>
+      <div class="footer-row footer-row-bottom">
+        <ul class="footer-social">
+          <li><a class="btn-social btn-social-fb" href="https://facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="btn-social btn-social-in" href="https://instagram.com/htmlacademy"><span class="visually-hidden">Instagram</span></a></li>
+          <li><a class="btn-social btn-social-tw" href="https://twitter.com/htmlacademy_ru?lang=ru"><span class="visually-hidden">Twitter</span></a></li>
+        </ul>
+        <div class="footer-copyright">
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 </body>
+
 </html>

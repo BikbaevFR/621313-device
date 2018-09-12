@@ -1840,6 +1840,7 @@ header.inner-page .main-navigation {
 .modal-write-us {
   left: 50%;
   top: 50%;
+  /*top: 1331px;*/
   transform: translate(-50%, -50%);
 
   -webkit-box-sizing: border-box;
@@ -1847,7 +1848,7 @@ header.inner-page .main-navigation {
   box-sizing: border-box;
   width: 960px;
   min-height: 550px;
-  padding-top: 81px;
+  padding-top: 76px;
   padding-left: 101px;
   
   background-color: #ffffff;
@@ -1934,7 +1935,6 @@ header.inner-page .main-navigation {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -5px;
 }
 
 .write-us-form-wrapper p {
@@ -1955,25 +1955,25 @@ header.inner-page .main-navigation {
 }
 
 .write-us-form-wrapper textarea {
-  padding-top: 14px;
+  padding-top: 10px;
 }
 
 .modal-write-us input {
-  width: 341px;
-  min-height: 50px;
+  width: 338px;
+  min-height: 43px;
   margin-top: 3px;
 }
 
 .modal-write-us input,
 .modal-write-us textarea {
-  padding-left: 20px;
+  padding-left: 16px;
 
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
 
   background-color: #f2f2f2;
-  border: none;
+  border: 3px solid transparent;
 }
 
 .modal-write-us input:hover,
@@ -1987,7 +1987,7 @@ header.inner-page .main-navigation {
 .modal-write-us input:focus,
 .modal-write-us textarea:focus {
   background-color: #ffffff;
-  border: 3px solid #f7e296;
+  border-color: #f7e296;
   outline: none;
 }
 

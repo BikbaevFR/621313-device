@@ -518,8 +518,9 @@ header.inner-page .main-navigation {
   content: "";
 
   position: absolute;
-  top: 3.5px;
-  left: 3.8px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
   display: none;
   width: 3px;

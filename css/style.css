@@ -1403,12 +1403,8 @@ header.inner-page .main-navigation {
   top: 6px;
 }
 
-.filter-input-checkbox:checked+label::after {
+.filter-input-checkbox:checked+label::before {
   content: url("../img/checkbox-on.svg");
-
-  position: absolute;
-  left: -40px;
-  top: 5px;
 }
 
 .filter-input-radio + label::before {
@@ -1419,12 +1415,8 @@ header.inner-page .main-navigation {
   top: 5px;
 }
 
-.filter-input-radio:checked + label::after {
+.filter-input-radio:checked + label::before {
   content: url("../img/radio-on.svg");
-
-  position: absolute;
-  left: -40px;
-  top: 6px;
 }
 
 .filter-input:hover + label::before,
@@ -1444,27 +1436,6 @@ header.inner-page .main-navigation {
 
   opacity: 0.25;
 }
-
-
-.filter-input:hover + label::before,
-.filter-input:hover + label::after,
-.filter-input:focus + label::before,
-.filter-input:focus + label::after {
-  opacity: 0.6;
-}
-
-
-.filter-input:active + label::before,
-.filter-input:active + label::after {
-  opacity: 1;
-}
-
-
-.filter-input:disabled + label {
-  color: #a6a6a6;
-  opacity: 0.25;
-}
-
 
 .filter-form .btn {
   border: none;

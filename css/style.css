@@ -1200,20 +1200,22 @@ header.inner-page .main-navigation {
 .catalog-page {
   width: 100%;
 
-  background: -webkit-gradient(linear, left top, right top, from(#dcdcdc), color-stop(33.5%, #dcdcdc), color-stop(33.5%, #ebebeb), to(#ebebeb));
-  background: -webkit-linear-gradient(left, #dcdcdc 0%, #dcdcdc 33.5%, #ebebeb 33.5%, #ebebeb 100%);
-  background: -o-linear-gradient(left, #dcdcdc 0%, #dcdcdc 33.5%, #ebebeb 33.5%, #ebebeb 100%);
-  background: linear-gradient(to right, #dcdcdc 0%, #dcdcdc 33.5%, #ebebeb 33.5%, #ebebeb 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#dcdcdc), color-stop(33.2vw, #dcdcdc), color-stop(33.2vw, #ebebeb), to(#ebebeb));
+  background: -webkit-linear-gradient(left, #dcdcdc 0%, #dcdcdc 33.2vw, #ebebeb 33.2vw, #ebebeb 100%);
+  background: -o-linear-gradient(left, #dcdcdc 0%, #dcdcdc 33.2vw, #ebebeb 33.2vw, #ebebeb 100%);
+  background: linear-gradient(to right, #dcdcdc 0%, #dcdcdc 33.2vw, #ebebeb 33.2vw, #ebebeb 100%);
 }
 
 .catalog-body {
   width: 100%;
 
-  background: -webkit-gradient(linear, left top, right top, from(#eee), color-stop(33.5%, #eee), color-stop(33.5%, #fff), to(#fff));
-  background: -webkit-linear-gradient(left, #eee 0%, #eee 33.5%, #fff 33.5%, #fff 100%);
-  background: -o-linear-gradient(left, #eee 0%, #eee 33.5%, #fff 33.5%, #fff 100%);
-  background: linear-gradient(to right, #eee 0%, #eee 33.5%, #fff 33.5%, #fff 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#eee), color-stop(33.2vw, #eee), color-stop(33.2vw, #fff), to(#fff));
+  background: -webkit-linear-gradient(left, #eee 0%, #eee 33.2vw, #fff 33.2vw, #fff 100%);
+  background: -o-linear-gradient(left, #eee 0%, #eee 33.2vw, #fff 33.2vw, #fff 100%);
+  background: linear-gradient(to right, #eee 0%, #eee 33.2vw, #fff 33.2vw, #fff 100%);
 }
+
+
 
 .catalog-page-wrapper {
   display: -webkit-box;
@@ -1226,34 +1228,29 @@ header.inner-page .main-navigation {
 
 .catalog-body-filter,
 .filter,
-.sorting {
+.sorting,
+.catalog {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .catalog-body-filter {
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
   width: 330px;
   padding-top: 70px;
-  padding-right: 67px;
+  padding-right: 70px;
   padding-left: 60px;
 
   color: #000000;
-
-  background-color: #efefef;
-  background-image: url("../img/bg-filters.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
 }
 
 .filter {
+          flex-shrink: 0;
   width: 330px;
   padding-top: 10px;
-  padding-left: 62px;
-
-  background-color: #dcdcdc;
-  background-image: url("../img/bg-title-filters.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+  padding-left: 60px;
+          -webkit-flex-shrink: 0;
 }
 
 .filter h2 {
@@ -1452,8 +1449,10 @@ header.inner-page .main-navigation {
   align-items: center;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  width: 832px;
-  padding: 0 0 0 75px;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  width: 830px;
+  padding: 0px 0 0 70px;
 
   font-family: "Opensans", Arial, sans-serif;
   font-size: 14px;
@@ -1461,8 +1460,6 @@ header.inner-page .main-navigation {
   font-weight: 400;
   color: #000000;
   letter-spacing: 0;
-
-  background-color: #ebebeb;
 }
 
 .sorting ul {
@@ -1543,10 +1540,12 @@ header.inner-page .main-navigation {
 }
 
 .catalog {
-  width: 832px;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  width: 830px;
   padding: 0;
   padding-top: 70px;
-  padding-left: 73px;
+  padding-left: 70px;
 }
 
 .catalog-list {

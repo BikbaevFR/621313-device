@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин гаджетов "DEVICE"</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
         </div>
       </div>
       <ul class="site-navigation header-navigation">
-        <li><a href="catalog.html">Каталог товаров</a>
+        <li class="sub"><a href="catalog.html">Каталог товаров</a>
           <ul class="submenu">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="monopods.html">Моноподы для селфи</a></li>
@@ -190,35 +190,35 @@
       <ul class="partners-list">
         <li class="partners-item">
           <a href="https://www.dji.com/ru" target="_blank">
-				<span class="visually-hidden">DJI</span>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
-					<image class="image-filter" filter="url(#filtersPicture)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/dji-color.png"/>
-				</svg>
-			</a>
+		    <span class="visually-hidden">DJI</span>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
+			  <image class="image-filter" filter="url(#filtersPicture)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/dji-color.png"/>
+			</svg>
+		  </a>
         </li>
         <li class="partners-item">
           <a href="http://www.sp-gadgets.com" target="_blank">
-				<span class="visually-hidden">SP Gadgets</span>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
-					<image class="image-filter" filter="url(#filtersPicture)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/spgadgets-color.png"/>
-				</svg>
-			</a>
+			<span class="visually-hidden">SP Gadgets</span>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
+			  <image class="image-filter" filter="url(#filtersPicture)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/spgadgets-color.png"/>
+			</svg>
+		  </a>
         </li>
         <li class="partners-item">
           <a href="https://ru.shop.gopro.com" target="_blank">
-				<span class="visually-hidden">GoPro</span>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
-					<image class="image-filter" filter="url(#filtersPicture)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/gopro-color.png"/>
-				</svg>
-			</a>
+			<span class="visually-hidden">GoPro</span>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
+			  <image class="image-filter" filter="url(#filtersPicture)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/gopro-color.png"/>
+			</svg>
+		  </a>
         </li>
         <li class="partners-item">
           <a href="https://www.vive.com/ru/" target="_blank">
-				<span class="visually-hidden">VIVE</span>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
-					<image class="image-filter" filter="url(#filtersPicture)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/vive-color.png"/>
-				</svg>
-			</a>
+			<span class="visually-hidden">VIVE</span>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
+			  <image class="image-filter" filter="url(#filtersPicture)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/vive-color.png"/>
+			</svg>
+		  </a>
         </li>
       </ul>
     </section>
@@ -281,7 +281,7 @@
       <div class="write-us-form-wrapper">
         <p>
           <label for="name">Ваше имя:</label>
-          <input class="write-us-name" id="name" type="text" name="write-us-form-name" placeholder="Имя Фамилия">
+          <input class="write-us-name" id="name" type="text" name="write-us-form-name" placeholder="Имя Фамилия" required>
         </p>
         <p>
           <label for="email">Ваш e-mail:</label>

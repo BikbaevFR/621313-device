@@ -511,7 +511,7 @@ input[type="radio"].visually-hidden {
   background-color: #f7e296;
 }
 
-.header-navigation li:hover .submenu {
+.sub:hover .submenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -732,13 +732,12 @@ input[type="radio"].visually-hidden {
 }
 
 .main-description .characteristics {
-  margin: 0;
-  padding: 0;
+  margin-left: 3px;
 }
 
 .characteristics td {
   padding-right: 74px;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
@@ -1232,7 +1231,7 @@ header.inner-page .main-navigation {
 }
 
 .breadcrumbs li {
-  margin-right: 40px;
+  margin-right: 37px;
 }
 
 .breadcrumbs a {
@@ -1246,16 +1245,21 @@ header.inner-page .main-navigation {
 
 .breadcrumbs a:before,
 .breadcrumbs a:after {
-  content: '';
+  content: "";
 
   position: absolute;
-  right: -19px;
+  right: -21px;
 
   display: block;
   width: 4px;
   height: 1px;
 
   background-color: #000000;
+}
+
+.breadcrumbs a:nth-child(2):before,
+.breadcrumbs a:nth-child(2):after {
+  right: -19px;
 }
 
 .breadcrumbs a:before {
@@ -1416,7 +1420,7 @@ header.inner-page .main-navigation {
 }
 
 .range-toggle-min {
-  left: 0;
+  left: -5px;
 }
 
 .range-toggle-max {
@@ -1449,7 +1453,6 @@ header.inner-page .main-navigation {
 
 .price-controls input {
   width: 50px;
-  margin: 0;
 
   color: inherit;
   font: inherit;
@@ -1565,7 +1568,7 @@ header.inner-page .main-navigation {
 }
 
 .sorting h2 {
-  margin-right: 52px;
+  margin-right: 56px;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
@@ -1914,6 +1917,10 @@ header.inner-page .main-navigation {
   color: #000000;
 
   background-color: #ebebeb;
+}
+
+footer.inner-page {
+  padding-bottom: 67px;
 }
 
 @-webkit-keyframes fadeIn {

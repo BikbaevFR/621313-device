@@ -732,7 +732,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-description .characteristics {
-  margin-left: 3px;
+  margin-left: -3px;
 }
 
 .characteristics td {
@@ -1915,10 +1915,6 @@ header.inner-page .main-navigation {
   background-color: #ebebeb;
 }
 
-footer.inner-page {
-  padding-bottom: 67px;
-}
-
 @-webkit-keyframes shake {
   0%,
   100% {
@@ -2193,7 +2189,7 @@ footer.inner-page {
 }
 
 .main-footer {
-  padding: 55px 0;
+  padding: 55px 0 69px;
 
   color: #ffffff;
 

@@ -1915,36 +1915,10 @@ header.inner-page .main-navigation {
   background-color: #ebebeb;
 }
 
-@-webkit-keyframes shake {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
-  }
-}
-
 @keyframes shake {
   0%,
   100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    transform: translateX(0) translate(-50%, -50%);
   }
 
   10%,
@@ -1952,16 +1926,14 @@ header.inner-page .main-navigation {
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
+    transform: translateX(-10px) translate(-50%, -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
+    transform: translateX(10px) translate(-50%, -50%);
   }
 }
 
@@ -2001,6 +1973,10 @@ header.inner-page .main-navigation {
 
   -webkit-animation: fadeIn 0.6s;
   animation: fadeIn 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-write-us {
@@ -2163,13 +2139,9 @@ header.inner-page .main-navigation {
   outline: none;
 }
 
-.modal-write-us input:invalid,
-.modal-write-us textarea:invalid {
+.modal-write-us input:invalid {
   background-color: #f6dada;
   border: none;
-  
-  -webkit-animation: shake 0.6s;
-  animation: shake 0.6s;
 }
 
 .modal-write-us label {

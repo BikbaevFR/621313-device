@@ -1915,9 +1915,10 @@ header.inner-page .main-navigation {
   background-color: #ebebeb;
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
+    -webkit-transform: translateX(0) translate(-50%, -50%);
     transform: translateX(0) translate(-50%, -50%);
   }
 
@@ -1926,6 +1927,7 @@ header.inner-page .main-navigation {
   50%,
   70%,
   90% {
+    -webkit-transform: translateX(-10px) translate(-50%, -50%);
     transform: translateX(-10px) translate(-50%, -50%);
   }
 
@@ -1933,6 +1935,32 @@ header.inner-page .main-navigation {
   40%,
   60%,
   80% {
+    -webkit-transform: translateX(10px) translate(-50%, -50%);
+    transform: translateX(10px) translate(-50%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0) translate(-50%, -50%);
+    transform: translateX(0) translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px) translate(-50%, -50%);
+    transform: translateX(-10px) translate(-50%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px) translate(-50%, -50%);
     transform: translateX(10px) translate(-50%, -50%);
   }
 }
@@ -1976,6 +2004,7 @@ header.inner-page .main-navigation {
 }
 
 .modal-error {
+  -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
 
